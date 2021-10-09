@@ -1,0 +1,181 @@
+<!-- test.html -->
+<!-- Programmé par : Maxime Lacroix-Lemire -->
+<!-- Dernière Mise À  Jour :  2021/05/27 -->
+
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <!-- Formulaire -->
+
+    <section class="pb-5">
+        <div class="container-fluid pt-5 police">
+            <div class="row">
+                <div class="offset-2 col-8 card bleu">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="pt-4 text-center">Ajout d'un client</h2>                                
+                            </div>
+                        </div>
+                    </div>
+                    <form>                        
+                        <div class="container-fluid pt-5 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">
+                                    <p>
+                                        <strong>
+                                            Nom de l'entreprise
+                                            <span class="rouge">*</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="pr-2">
+                                    <input type="text" name="enterpriseName" id="enterpriseName" pattern="[A-Za-z]{}" size="50" minlength="2" maxlength="50" required></br>
+                                    <label for="enterpriseName">Nom de l'entreprise</label>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="container-fluid pt-5 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">
+                                    <p>
+                                        <strong>
+                                            Identification
+                                            <span class="rouge">*</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div class="pr-2">
+                                    <input type="text" name="inputName" id="inputName" pattern="[A-Za-z]{}" minlength="2" maxlength="25" required></br>
+                                    <label for="inputName">Nom</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="inputLastName" id="inputLastName" pattern="[A-Za-z]{}" minlength="2" maxlength="25" required></br>
+                                    <label for="inputLastName">Prénom</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid pt-4 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">
+                                    <p>
+                                        <strong>
+                                            Numéro de téléphone
+                                            <span class="rouge">*</span>
+                                        </strong>
+                                    </p>
+                                </div>                                
+                                <div>
+                                    <input type="tel" name="numTel" id="numTel" maxlength="11" required></br>
+                                    <label for="numTel" class="pl-1">Numéro de téléphone</label>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="container-fluid pt-4 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">
+                                    <p>
+                                        <strong>
+                                            Adresse
+                                            <span class="rouge">*</span>
+                                        </strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <input type="text" name="numPorte" id="numPorte" size="50" pattern="[A-Za-z0-9]{}" minlength="2" maxlength="50" required></br>
+                                    <label for="numPorte"> Adresse</label>                               
+                                </div>                            
+                            </div>
+                        </div>                        
+                        <div class="container-fluid pt-2 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">
+                                </div>
+                                <div>
+                                    <input type="text" name="ville" id="ville" size="21" class="mr-2" pattern="[A-Za-z]{}" minlength="2" maxlength="25" required></br>
+                                    <label for="ville"> Ville</label>                               
+                                </div>
+                                <div>
+                                    <input type="text" name="province" id="province" size="22" pattern="[A-Za-z]{}" minlength="2" maxlength="25" required></br>
+                                    <label for="province"> État/province</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid pt-2 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">                                
+                                </div>
+                                <div>
+                                    <input type="text" name="codePostal" id="codePostal" size="21" class="mr-2" pattern="[a-zA-Z]{1,1}[0-9]{1,1}[a-zA-Z]{1,1}[\-]{1,1}[0-9]{1,1}[a-zA-Z]{1,1}[0-9]{1,1}" minlength="7" maxlength="7" required></br>
+                                    <label for="codePostal"> Code postal</label>                               
+                                </div>
+                                <div>
+                                    <select name="pays" id="pays">
+                                        <option value="noOption" selected>-------------</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="État-Unis">État-Unis</option>
+                                        <option value="Mexique">Mexique</option>
+                                        <option value="France">France</option>
+                                        <option value="Belgique">Belgique</option>
+                                    </select></br>
+                                    <label for="pays"> Pays</label>                               
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="container-fluid pb-5 pt-3 form-group">
+                            <div class="row">
+                                <div class="col-3 mr-3">                                
+                                </div>
+                                <div class="pt-5">
+                                    <button type="submit">Ajout du client</button>                              
+                                </div>                                                            
+                            </div>
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+        <!-- Appel du modal -->
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#monModal">Ajout d'un animal</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="monModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>

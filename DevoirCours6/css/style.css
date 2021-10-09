@@ -1,0 +1,31 @@
+.rouge{
+    color: red;
+}
+
+.bleu{
+    background-color: #C7D9D4;
+}
+
+.nopadding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+select {
+    width: 180px;
+}
+
+label {
+    color: black;
+    opacity: 0.7;
+    font-size: 0.8em;
+}
+
+.test{
+    width: 50%;
+}
+
+.card:hover{
+    border-color: black ;
+    opacity: 0.8;
+}
